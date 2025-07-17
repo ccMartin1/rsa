@@ -1,0 +1,30 @@
+server:
+  servlet:
+    context-path: /comunes
+  port: 8080
+
+client:
+  uribase: http://pfdes4.gfvepormas.com.mx/AdaptiveAuthentication/services/AdaptiveAuthentication?wsdl
+  username: RSA_USER
+  password: rsauser07$
+t24:
+  usr: USRT24
+  pwd: PWDT24
+  ofs: VPM.GET.FECHA.REGCTA,,
+message:
+  bad:
+    otp: El código de verificación es incorrecto intenta nuevamente.
+spring:
+  application:
+    name: Outseer
+  data:
+    mongodb:
+      database: BE
+      uri: mongodb://USRN4QA:I0EuUiMcyJk*H%2F5JqBqmmC\un2V9$t@B110QMONGO1.gfvepormas.com,B110QMONGO2.gfvepormas.com,B110QMONGO3.gfvepormas.com/BE?replicaSet=BancaElectronicaQA&authSource=admin&appName=BE
+cliente:
+  conectort24:
+    uribase: http://dev-conector-t24-route-dev-banca-electronica.apps.qa1-ocp.vepormas.com
+    uri: /comunes/t24/v1/connector/ofs
+tmp:
+  sms:
+    url: http://movilq.vepormas.com/banca-core-service-notificaciones/generaNotificacionService/
